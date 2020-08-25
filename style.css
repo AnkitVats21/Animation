@@ -28,15 +28,11 @@ body{
   align-items: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 5vh;
+  color: yellow;
+  padding-left: 5vh;
+  letter-spacing: 35px;
 }
 
-h1{
-  margin: 0 10vh;
-  background: rgba(2, 146, 241, 0.87);
-  background-size: 50%;
-  color: transparent;
-  -webkit-background-clip: text;
-}
 
 .lens{
   height: 10vh;
@@ -46,7 +42,7 @@ h1{
   border-bottom: 8px solid rgb(32, 39, 43);
   border-left: 8px solid rgb(245, 1, 180);
   position: fixed;
-  top: 41vh;
+  top: 42vh;
   color: rgb(0, 119, 255);
   font-family: 'Press Start 2P', cursive;
   font-size: 5vh;
@@ -65,12 +61,29 @@ h1{
   top: 0;
   left: 0;
 }
+.love{
+  opacity: 0.5;
+}
 
-button{
+.peace{
+  opacity: 0.8;
+}
+
+#btn{
   background-color: rgb(0, 0, 0);
   height: 5vh;
   width: 5vh;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#btn2{
+  background-color: rgb(7, 212, 0);
+  height: 5vh;
+  width: 15vh;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
