@@ -34,3 +34,9 @@ j=0;
 requestAnimationFrame(animate);
 }
 animate();
+
+function modes() {
+  var element = document.body;
+  document.getElementById('btn').classList.toggle('btn');
+  element.classList.toggle("dark-mode");
+}
