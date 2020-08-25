@@ -9,7 +9,7 @@ var si="SOFTWARE INCUBATOR";
 function backgroundAnimation(){
   x +=1;
   console.log(x)
-  love.style.transform = `translate3d(0,${x*0.1}rem,0)`;
+  love.style.transform = `translate3d(0,${x*0.1}vh,0)`;
   peace.style.transform = `translate3d(${x*0.1}vh,0,0)`;
   code.style.transform = `translate3d(${x*0.1}vh,${x*0.1}vh,0)`;
   if(Math.abs(x)==100){
