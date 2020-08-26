@@ -7,9 +7,9 @@ var line =document.querySelector('#container')
 var xPos = 0, j=0, x=-500, si="SOFTWARE INCUBATOR";
 function backgroundAnimation(){
   x +=1;
-  love.style.transform = `translate3d(0,${x*0.1}vh,0)`;
-  peace.style.transform = `translate3d(${x*0.1}vh,0,0)`;
-  code.style.transform = `translate3d(${x*0.1}vh,${x*0.1}vh,0)`;
+  love.style.transform = `translate3d(0,${x*0.1}vw,0)`;
+  peace.style.transform = `translate3d(${x*0.1}vw,0,0)`;
+  code.style.transform = `translate3d(${x*0.1}vw,${x*0.1}vh,0)`;
   if(Math.abs(x)==200){
     x=-500;
   }
@@ -20,7 +20,7 @@ backgroundAnimation();
 
 function animate() {
 xPos +=0.5;
-box.style.transform = `translate3d(${xPos}vh, 0, 0)`;
+box.style.transform = `translate3d(${xPos*0.5}vw, 0, 0)`;
 if(Math.abs(xPos)%10==0){
   box.innerHTML=si.charAt(j);
   line.innerHTML += si.charAt(j);

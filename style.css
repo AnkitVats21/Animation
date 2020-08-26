@@ -8,7 +8,7 @@
 
 body{
   position: relative;
-  color: white;
+  color: rgba(255, 255, 255, 0);
   overflow: hidden;
 }
 
@@ -21,38 +21,36 @@ body{
 }
 
 .container{
-  height: 100vh;
+  height: auto;
+  top: 48vh;
   width: 100%;
-  position: relative;
-  display: flex;
+  position: fixed;
   align-items: center;
   font-family: 'Press Start 2P', cursive;
-  font-size: 5vh;
+  font-size: 2vw;
   color: yellow;
-  padding-left: 5vh;
-  letter-spacing: 35px;
+  padding-left: 8vw;
+  letter-spacing: 3vw;
 }
 
 
 .lens{
-  height: 10vh;
-  width: 13vh;
+  height: 9vh;
+  width: 10vw;
   border-right: 8px solid rgb(248, 49, 125);
   border-top: 8px solid rgb(4, 34, 37);
   border-bottom: 8px solid rgb(32, 39, 43);
-  border-left: 8px solid rgb(245, 1, 180);
   position: fixed;
   top: 42vh;
   color: rgb(0, 119, 255);
   font-family: 'Press Start 2P', cursive;
-  font-size: 5vh;
-  padding-top: 4vh;
+  font-size: 2vw;
+  padding-top: 5vh;
   text-align: center;
-  justify-items: center; 
 }
 
 .love,.peace,.code{
-  position: absolute;
+  position: fixed;
   background: url(lpc.png);
   background-repeat: repeat;
   background-size: 100vh;
@@ -73,17 +71,18 @@ body{
   background-color: rgb(0, 0, 0);
   height: 5vh;
   width: 5vh;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
+  border-radius: 50%;
 }
 
 #btn2{
   background-color: rgb(7, 212, 0);
   height: 5vh;
-  width: 15vh;
+  width: auto;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
